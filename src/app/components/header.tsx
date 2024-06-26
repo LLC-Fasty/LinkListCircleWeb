@@ -10,7 +10,7 @@ const Header = () => {
   };
 
   return (
-    <div className="w-full bg-transparent fixed top-0 ">
+    <div className="w-full fixed top-0 ">
       <div className="container mx-auto flex md:items-start items-center justify-between  pr-4 md:pr-0">
         {/* Logo Section */}
         <div className="flex-shrink-0">
