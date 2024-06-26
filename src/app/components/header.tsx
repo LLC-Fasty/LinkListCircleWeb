@@ -10,10 +10,10 @@ const Header = () => {
   };
 
   return (
-    <div className="w-full fixed top-0 ">
-      <div className="container mx-auto flex md:items-start items-center justify-between  pr-4 md:pr-0">
+    <div className="w-full bg-transparent fixed top-0 z-10">
+      <div className="container mx-auto flex md:items-start items-center justify-between pr-4 md:pr-0">
         {/* Logo Section */}
-        <div className="flex-shrink-0">
+        <div className="flex-shrink-0 z-50">
           <div className="shadow-2xl shadow-[#C08261] bg-[#9A3B3B] rounded-br-[500px] md:rounded-tl-[80px] rounded-bl-[80px]">
             <div className="py-[15px] pr-[25px] pl-[15px] md:py-[35px] md:px-[46px]">
               <Link href="/">
@@ -32,20 +32,20 @@ const Header = () => {
         </div>
 
         {/* Navigation Section */}
-        <div className='md:top-0 md:shadow-2xl md:shadow-[#C08261] md:bg-[#9A3B3B] md:rounded-bl-[500px] md:rounded-tr-[80px] md:rounded-br-[80px]'>
-            <div className="md:py-[20px] md:px-[40px]">
-                <nav className="hidden md:flex space-x-6 ml-auto items-center text-[20px] font-medium">
-                <Link href="#about" className="text-[#F2ECBE] hover:text-[#E2C799]">About</Link>
-                <Link href="#services" className="text-[#F2ECBE] hover:text-[#E2C799]">Services</Link>
-                <Link href="#blogs" className="text-[#F2ECBE] hover:text-[#E2C799]">Blogs</Link>
-                <Link href="#contact" className="text-[#F2ECBE] rounded-2xl bg-[#C08261] p-[10px] border-4 border-[#F2ECBE] hover:border-[#C08261] hover:bg-[#F2ECBE] hover:text-[#9A3B3B]">Contact Us</Link>
-                <Link href="https://forms.gle/y9TANNUWuVWQVyat8" className="text-[#F2ECBE] rounded-2xl bg-[#C08261] p-[10px] border-4 border-[#F2ECBE] hover:border-[#C08261] hover:bg-[#F2ECBE] hover:text-[#9A3B3B]">Join Us</Link>
-                </nav>
-            </div>
+        <div className='md:top-0 md:shadow-2xl md:shadow-[#C08261] md:bg-[#9A3B3B] md:rounded-bl-[500px] md:rounded-tr-[80px] md:rounded-br-[80px] z-40'>
+          <div className="md:py-[20px] md:px-[40px]">
+            <nav className="hidden md:flex space-x-6 ml-auto items-center text-[20px] font-medium">
+              <Link href="#about" className="text-[#F2ECBE] hover:text-[#E2C799]">About</Link>
+              <Link href="#services" className="text-[#F2ECBE] hover:text-[#E2C799]">Services</Link>
+              <Link href="#blogs" className="text-[#F2ECBE] hover:text-[#E2C799]">Blogs</Link>
+              <Link href="#contact" className="text-[#F2ECBE] rounded-2xl bg-[#C08261] p-[10px] border-4 border-[#F2ECBE] hover:border-[#C08261] hover:bg-[#F2ECBE] hover:text-[#9A3B3B]">Contact Us</Link>
+              <Link href="https://forms.gle/y9TANNUWuVWQVyat8" className="text-[#F2ECBE] rounded-2xl bg-[#C08261] p-[10px] border-4 border-[#F2ECBE] hover:border-[#C08261] hover:bg-[#F2ECBE] hover:text-[#9A3B3B]">Join Us</Link>
+            </nav>
+          </div>
         </div>
 
         {/* Mobile Menu Button */}
-        <div className="lg:hidden ml-auto">
+        <div className="lg:hidden ml-auto z-50">
           <button
             onClick={toggleMenu}
             className="text-[#F2ECBE] focus:outline-none focus:text-[#E2C799] bg-[#9A3B3B] rounded-full p-2"
@@ -70,9 +70,9 @@ const Header = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="lg:hidden bg-[#9A3B3B] text-[#F2ECBE] ">
+        <div className="lg:hidden bg-[#9A3B3B] text-[#F2ECBE] z-40">
           <div className="px-6 pt-2 pb-4 space-y-2">
-            <Link href="#aboutold" className="block">About</Link>
+            <Link href="#about" className="block">About</Link>
             <Link href="#services" className="block">Services</Link>
             <Link href="#blogs" className="block">Blogs</Link>
             <Link href="#contact" className="block">Contact Us</Link>
@@ -85,4 +85,3 @@ const Header = () => {
 };
 
 export default Header;
-
