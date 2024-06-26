@@ -67,7 +67,7 @@ const Blogs = () => {
   };
 
   return (
-    <div id='blogs' className="py-24 sm:py-32 mt-[100px]">
+    <div id='blogs' className="py-24 sm:py-32 mt-[100px] z-0">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-full lg:mx-0 text-center">
           <h2 className="text-3xl font-black tracking-tight text-[#9A3B3B] sm:text-[44px]">From the blog</h2>
