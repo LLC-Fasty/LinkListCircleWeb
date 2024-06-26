@@ -59,7 +59,7 @@ export default function Page({ params }: { params: { id: string } }) {
             </span>
           </div>
           <div className="group relative">
-            <h3 className="mt-3 text-4xl tracking-wide font-black leading-6 text-[#F2ECBE] text-center">
+            <h3 className="mt-3 text-4xl tracking-wide font-black leading-10 text-[#F2ECBE] text-center">
               {post.heading}
             </h3>
             {post.image_url && (
