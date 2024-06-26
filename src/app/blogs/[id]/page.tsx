@@ -54,7 +54,7 @@ export default function Page({ params }: { params: { id: string } }) {
             <time dateTime={post.date} className="text-[#E2C799]">
               {post.date}
             </time>
-            <span className="relative z-10 rounded-full bg-[#C08261] px-3 py-1.5 font-medium text-[#F2ECBE] hover:bg-[#E2C799] hover:text-[#C08261]">
+            <span className="relative z-0 rounded-full bg-[#C08261] px-3 py-1.5 font-medium text-[#F2ECBE] hover:bg-[#E2C799] hover:text-[#C08261]">
               {post.domain}
             </span>
           </div>
@@ -66,7 +66,7 @@ export default function Page({ params }: { params: { id: string } }) {
               <Image src={post.image_url} alt="" className="mt-4 w-full object-cover rounded-lg" width={500} height={300} />
             )}
             <p className="mt-5 text-xl leading-6 text-[#E2C799]">{post.short_description}</p>
-            <p className="mt-5 text-lg text-justify  leading-6 text-[#E2C799]">{post.content}</p>
+            <p className="mt-5 text-lg text-justify  leading-10 text-[#E2C799]">{post.content}</p>
           </div>
           <div className="relative mt-8 flex items-center gap-x-4">
             <Image src="/creator.png" alt="" className="h-10 w-10 rounded-full" width={50} height={50} />
